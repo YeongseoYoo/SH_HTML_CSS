@@ -8,48 +8,44 @@
 
 body {
   font-family: Sora;
-  padding: 0px 64px;
 }
 
 nav {
-  /* 레이아웃에 대한 스타일(5~10줄) */
   display: flex;
-  max-width: 1280px;
-  padding: 10px 32px;
-  justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
-  /* display: flex;
-  align-items: center;
-
-  padding-left: 300px;
-  padding-right: 300px;
-  /*  */
-  gap: 5px;
+  padding: 0 20px;
+  gap: 40px;
   height: 100px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.navLink {
+
+.navItem {
+  color: #403930;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+header {
   display: flex;
-  height: 56px;
-  padding: 16px 20px;
-  justify-content: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 100px auto;
   align-items: center;
-  gap: 8px;
-  border-radius: 6px;
-  height: 8px;
-  background: var(--Primary-Black, #000);
-  color: white;
 }
 
 .hItem1 {
   color: var(--Primary-Black, #000);
   /* Displaytext/Extra Bold */
   font-family: Sora;
-  font-size: 36px;
+  font-size: 64px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 56px; /* 116.667% */
-  letter-spacing: -0.96px;
+  font-weight: 600;
+  line-height: 100px; /* 116.667% */
+  letter-spacing: -1.28px;
   display: inline-block;
 }
 .hItem2 {
@@ -57,62 +53,162 @@ nav {
 
   /* Displaytext/Regular */
   font-family: Sora;
-  font-size: 36px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: 56px; /* 116.667% */
-  letter-spacing: -0.96px;
+  letter-spacing: -1.28px;
   display: inline-block;
 }
 .hItem3 {
   /* Outlined/Extra Bold */
   font-family: Sora;
-  font-size: 36px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 800;
   line-height: 56px; /* 116.667% */
-  letter-spacing: -0.96px;
+  letter-spacing: -1.28px;
   display: inline-block;
 }
+
 .stroke {
   /* Outlined/Extra Bold */
   color: #fff;
 
   font-family: Sora;
-  font-size: 36px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 800;
   line-height: 56px; /* 116.667% */
   letter-spacing: -0.96px;
   -webkit-text-stroke: 1px #000;
 }
-
-.image-container {
-  display: flex;
-  padding-left: 550px;
-  margin-top: -180px;
-  justify-content: flex-end;
-  align-items: center; /* 이미지와 텍스트 사이의 여백 */
-  position: absolute;
-}
-
-.image-container img {
-  width: 400px; /* 이미지 크기 조절 */
-  height: auto; /* 자동으로 높이 계산 */
-}
-
 .headerLinkContainer {
   display: flex;
-  /* 가로는 row. */
   gap: 16px;
-  flex-direction: row;
+  margin-top: 40px;
 }
+
 .headerLink {
-  background-color: #000;
-  padding: 10px;
-  /* block으로 setting 하면 가로 꽉 채워서 스타일에 적용다 */
-  display: block;
-  /* 언더라인이 되어 있으면 url로 인지, but 디자인을 위해 none으로 설정*/
+  display: flex;
+  padding: 24px 40px;
+  gap: 10px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  border-radius: 16px;
   text-decoration: none;
-  color: #fff;
+  border: solid 4px black;
+}
+.black {
+  background-color: black;
+  color: #e6eeff;
+}
+
+.outline {
+  color: #403930;
+}
+
+.profileImage {
+  border-radius: 500px;
+  border: 10px solid #bcf2f9;
+  width: 250px;
+  height: 250px;
+  background-image: url(증명사진1.jpg);
+  background-size: cover;
+  background-position: 60%;
+}
+/* --- About Me---  */
+
+.aboutMeContainer {
+  background: linear-gradient(
+    96deg,
+    rgba(189, 210, 255, 0.4) 1.72%,
+    rgba(116, 224, 215, 0.4) 158.93%
+  );
+}
+.aboutMe {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+.aboutMe h2 {
+  color: #000;
+  font-size: 40px;
+  /* white-space: pre-line; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
+}
+
+.aboutMe p {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  white-space: pre-line;
+}
+
+.posRelative {
+  position: relative;
+}
+
+.fixedContactButton {
+  position: fixed;
+  right: 130px;
+  bottom: 60px;
+
+  border-radius: 50px;
+  border: 10px solid #bbd5f7;
+  background: linear-gradient(
+    98deg,
+    #bed3ff -10.83%,
+    #d2f3e5 51.79%,
+    #ffebd9 110.76%
+  );
+  width: 165px;
+  padding: 20px 30px;
+  color: rgba(64, 57, 48, 0.8);
+
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.fixedContactButton a {
+  color: black;
+}
+
+/* --- Tech Stack---  */
+.techStackContainer {
+  background: #fff;
+}
+.techStack {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+.techStack h2 {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  /* white-space: pre-line; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
+}
+.techStack p {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  white-space: pre-line;
 }

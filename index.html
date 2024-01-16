@@ -3,28 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>바밤바</title>
+    <title>유영서 portfolio</title>
     <link rel="stylesheet" href="sytle.css" />
   </head>
 
   <body>
     <!-- 상단 네비게이션 -->
-    <nav class="topNav">
+    <nav>
       <div class="navItem">home</div>
       <div class="navItem">project</div>
       <div class="navItem">recommend</div>
-      <div class="navItem">contact</div>
-      <a class="navLink" href="https://www.google.com" target="_blank"
-        >Resume</a
-      >
     </nav>
-    <br />
 
     <header>
-      <!-- <span></span>
-      css inline -->
-      <!-- div안에 span으로 -->
-      <div class="hItem">
+      <!-- 컨텐츠 -->
+      <div className="headerTextContainer">
         <span class="hItem2">Hello I'am </span>
         &nbsp;
         <span class="hItem1">Yeongseo Yoo</span>
@@ -36,18 +29,53 @@
         <span class="hItem2">Based In</span>
         &nbsp;
         <span class="hItem1">Korea</span>
-
-        <div class="image-container">
-          <img src="photo.png" alt="Image Alt Text" />
+        <br /><br />
+        <div class="headerLinkContainer">
+          <a
+            class="headerLink black"
+            href="https://www.google.com"
+            target="_blank"
+            >Github Link</a
+          >
+          <a class="headerLink outline" href="#" target="_blank">Resume Link</a>
         </div>
       </div>
-      <br /><br />
-      <div class="headerLinkContainer">
-        <a class="headerLink" href="https://www.google.com" target="_blank"
-          >Github Link</a
-        >
+      <!-- 이미지 -->
+      <div className="headerImageContainer">
+        <div class="profileImage"></div>
       </div>
-      <br /><br /><br /><br /><br /><br />
     </header>
+    <br /><br /><br /><br />
+    <section class="aboutMeContainer">
+
+      <div class="aboutMe">
+          <h2>늘 배우고 성장하는<br />
+              성장하는 백엔드 개발자
+              유영서 입니다.
+          </h2>
+          <p>"배우고자 하는 자에게는 배움의 기회가 찾아온다" 능동적인 자세와 적극적인 소통으로 
+            공동의 목표를 달성하고자 합니다.금융과 비금융을 아우르는 데이터 결합으로 시야를 넓혀 
+            ‘개발’을 통해 사회에 선한 영향력을 행사하고 싶습니다. 개발하는 코드 한 줄이, 아이디어 하나가
+            세상을 바꾸는 한 걸음이 될 수 있다는 것에 가슴 벅참을 느끼며 다양한 프로젝트에 참여하고 있습니다. 
+            제가 만드는 소프트웨어의 파급력을 인지하고 역량을 최대한 발휘하여 최고의 개발자로 성장하기 위해
+            끊임없이 노력하겠습니다.</h2>
+      </div>
+  </section>
+  <div class="fixedContactButton">
+    <div>Contact Me</div>
+    <a href="tel:010-9643-7271">Phone</a><br/>
+    <a href="mailto:youngseo1314@gmail.com">E-mail</a>
+  </div>
+
+  <section class="techStackContainer">
+    <div class="techStack">
+        <h2>기술 스택<br />      
+        </h2>
+        <p>지금까지 활용해 본 기술들입니다. 
+          넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다.</h2>
+    </div>
+    
+  </section>
+    
   </body>
 </html>
