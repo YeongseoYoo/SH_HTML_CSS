@@ -169,10 +169,6 @@ header {
   white-space: pre-line;
 }
 
-.posRelative {
-  position: relative;
-}
-
 .fixedContactButton {
   position: fixed;
   right: 70px;
@@ -192,9 +188,9 @@ header {
   color: rgba(64, 57, 48, 0.8);
 
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
 }
 
@@ -342,4 +338,58 @@ header {
   50% {
     border-color: tranparent;
   }
+}
+
+/* --- project ---  */
+.projectContainer {
+  background: #fff;
+}
+.projects {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+.project {
+  background-color: rgb(222, 231, 255);
+  border-radius: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.project h3 {
+  color: #403930;
+
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  /* 50px */
+  letter-spacing: -0.8px;
+  display: flex;
+  margin: 15px 30px;
+}
+.project span {
+  font-size: 20px;
+  line-height: 50%;
+  letter-spacing: -0.8px;
+  margin: 30px;
+}
+.project p {
+  align-self: stretch;
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */ /* 30px */
+  letter-spacing: -0.8px;
+  margin: 30px;
+}
+
+.product-list {
+  text-align: center;
+}
+.product-list img {
+  margin: 30px; /* 이미지 간격 조절 */
 }
