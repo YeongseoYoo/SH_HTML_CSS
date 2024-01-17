@@ -36,7 +36,6 @@ header {
   /* max-width: 1280px; */
   margin-left: 100px;
   /* align-items: center; */
-
 }
 .badge {
   padding: 12px 24px;
@@ -53,7 +52,6 @@ header {
 
   margin-bottom: 40px;
 }
-
 
 .hItem1 {
   color: var(--Primary-Black, #000);
@@ -215,11 +213,11 @@ header {
 .fixedContactButton a {
   color: black;
 }
-@media (max-width: 768px){
-  .fixedContactButton{
-    display: none
+@media (max-width: 768px) {
+  .fixedContactButton {
+    display: none;
   }
-  body{
+  body {
     background-color: ;
   }
 }
@@ -258,7 +256,7 @@ header {
 }
 .product-list img {
   margin: 30px; /* 이미지 간격 조절 */
-  width:  150px;
+  width: 150px;
 }
 
 /* ----- 애니메이션 ---- */
@@ -369,8 +367,7 @@ header {
 
 /* --- project ---  */
 .projectContainer {
-  background: rgba(244, 244, 244, 0.50);
-  
+  background: rgba(244, 244, 244, 0.5);
 }
 .projects {
   max-width: 1280px;
@@ -415,17 +412,27 @@ header {
   letter-spacing: -0.8px;
   margin: 30px;
 }
-.projectIamge1 img{
-  text-align: right;
-  padding-right: 30px;
-  width: 100px; 
-  height: 200px;
+.projectImage1 {
+  padding-right: 20px;
 }
-.projectIamge2 img{
+/*.projectImge2 img {
   text-align: right;
   padding-right: 30px;
-  width: 435px; 
+  width: 435px;
   height: 230px;
+} */
+.projectImage1 img {
+  text-align: right;
+  width: 130px;
+  height: 250px;
+}
+.projectImage2 {
+  padding-right: 20px;
+}
+.projectImage2 img {
+  text-align: right;
+  width: 435px;
+  height: 250px;
 }
 .project img {
   margin-top: 25px;
@@ -435,9 +442,9 @@ header {
 }
 
 /* recommed */
-.recommendContainer{
+.recommendContainer {
 }
-.recommend{
+.recommend {
   max-width: 1280px;
   margin: 0 auto;
   padding: 120px 20px;
@@ -452,55 +459,51 @@ header {
   line-height: 125%; /* 50px */
   letter-spacing: -0.8px;
 }
-.frame{
+.frame {
   display: flex;
-align-items: flex-start;
-gap: 40px;
+  align-items: flex-start;
+  gap: 40px;
 }
-.assessment{
-display: flex;
-width: 460px;
-height: 264px;
-padding: 0px 39px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 20px;
-border-radius: 10px;
-background: #FAFAFA;
-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+.assessment {
+  display: flex;
+  width: 460px;
+  height: 264px;
+  padding: 0px 39px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
-.assessment span{
+.assessment span {
   color: #403930;
 
-text-align: center;
-font-family: Work Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 25px; /* 125% */
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 125% */
 }
 
 .lastContainer {
-  background: linear-gradient(
-    96deg,
-    #cafbc0 1.72%,
-    #ebff94 158.93%
-  );
+  background: linear-gradient(96deg, #cafbc0 1.72%, #ebff94 158.93%);
   display: flex;
-height: 406px;
-padding: 64px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
+  height: 406px;
+  padding: 64px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.last h2{
+.last h2 {
   color: #403930;
-font-family: Pretendard;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: 125%; /* 60px */
-letter-spacing: -0.96px;
+  font-family: Pretendard;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 60px */
+  letter-spacing: -0.96px;
 }
