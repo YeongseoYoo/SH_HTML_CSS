@@ -12,7 +12,8 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 0 20px;
   gap: 40px;
   height: 100px;
@@ -32,9 +33,10 @@ header {
   display: flex;
   padding: 0 20px;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 100px auto;
-  align-items: center;
+  /* max-width: 1280px; */
+  margin-left: 100px;
+  /* align-items: center; */
+
 }
 .badge {
   padding: 12px 24px;
@@ -162,9 +164,9 @@ header {
   );
 }
 .aboutMe {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 120px 80px;
 }
 .aboutMe h2 {
   color: #000;
@@ -256,6 +258,7 @@ header {
 }
 .product-list img {
   margin: 30px; /* 이미지 간격 조절 */
+  width:  150px;
 }
 
 /* ----- 애니메이션 ---- */
@@ -412,9 +415,17 @@ header {
   letter-spacing: -0.8px;
   margin: 30px;
 }
-.projectIamge{
+.projectIamge1 img{
   text-align: right;
   padding-right: 30px;
+  width: 100px; 
+  height: 200px;
+}
+.projectIamge2 img{
+  text-align: right;
+  padding-right: 30px;
+  width: 435px; 
+  height: 230px;
 }
 .project img {
   margin-top: 25px;
