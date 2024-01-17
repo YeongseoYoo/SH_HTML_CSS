@@ -1,0 +1,21 @@
+.fixedContactBurron {
+    display: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 32px;
+    height: 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-self: stretch;
+  }
+  
+  .navItem {
+    color: #403930;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+  }
