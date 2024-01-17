@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- 여기다가 구글 태그 넣기 -->
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEZ1D1YSKB"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GEZ1D1YSKB');
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>유영서 portfolio</title>
@@ -34,10 +44,10 @@
           <a
             class="headerLink black"
             href="https://www.google.com"
-            target="_blank"
+            target="_blank" onclick="onClickButton('github')"
             >Github Link</a
           >
-          <a class="headerLink outline" href="#" target="_blank">Resume Link</a>
+          <a class="headerLink outline" href="#" target="_blank"  onclick="onClickButton('resume')">Resume Link</a>
         </div>
       </div>
       <!-- 이미지 -->
@@ -60,12 +70,28 @@
             제가 만드는 소프트웨어의 파급력을 인지하고 역량을 최대한 발휘하여 최고의 개발자로 성장하기 위해
             끊임없이 노력하겠습니다.</h2>
       </div>
-  </section>
+    </section>
   <div class="fixedContactButton">
     <div>Contact Me</div>
     <a href="tel:010-9643-7271">📳</a>
     <a href="mailto:youngseo1314@gmail.com">📧</a>
   </div>
+  <script>
+    function onClickButton(type){
+      if (type == 'github') {
+        gtag("event", "깃허브_버튼_클릭", {
+          'event-category': '깃허브_버튼_클릭',
+          'event_tabel': '깃허브_버튼_클릭'
+        })
+      }
+      else if (type == 'resume') {
+        gtag("event", "깃허브_버튼_클릭", {
+          'event-category': '이력서_버튼_클릭',
+          'event_tabel': '이력서_버튼_클릭'
+        })
+      }
+    }
+  </script>
 
   <section class="techStackContainer">
     <div class="techStack">
@@ -109,13 +135,91 @@
         </div>
         <div class="class2">
           <div class="projectImage">
-            <img src="졸작1.png" width="200">
+            <img src="졸작1.png" width="130" height="250">
+            <img src="졸작4.png" width="130" height="250">
+            <img src="졸작3.png" width="130" height="250">
           </div>
         </div>
       </div>
+      <br /><br/>
+      <div class="project">
+        <div class="class1">
+        <br />
+        <h3>따릉이 자전거 코스 추천 웹</h3> 
+        <span>Springboot, MariaDB, JPQL, Colab, JAVA, JAVASCRIPT </span>
+        <p>경로를 포함한 사용자들의 후기를 해시태그로 분류해 자전거 코스를 <br />추천하고,
+          입력된 후기를 감정 분석하여 힐링/무난/비추 코스로 나누어 <br />게시판에 나타냅니다.
+        </p>
+        <br />
+        </div>
+        <div class="class2">
+          <div class="projectImage">
+            <img src="pr2.1.png" width="435" height="250">
+          </div>
+        </div>
+      </div>
+      <br /><br/>
+      <div class="project">
+        <div class="class1">
+        <br />
+        <h3>아르바이트 대타 일정 관리 웹</h3> 
+        <span>Node.js, Vue, Springboot, mongodb</span>
+        <p>같은 지점에서 근무하는 구성원에게 대타 요청하기 또는 요청건을 <br />수락할 수 있으며, 
+          근무하는 지점을 검색하고 등록하고 마이페이지에서 <br />월별로 계산된 급여와 캘린더 확인 및 관리가
+          가능합니다. 
+        </p>
+        <br />
+        </div>
+        <div class="class2">
+          <div class="projectImage">
+            <img src="pr3.png" width="435" height="250">
+          </div>
+        </div>
+      </div>
+      <br /><br/>
+      <div class="project">
+        <div class="class1">
+        <br />
+        <h3>가상일기 메이트 챗봇 서비스</h3> 
+        <span>Node.js, Vue, Springboot, mongodb</span>
+        <p>'리츄얼 트렌드', '기록 트렌드' 를 겨냥한 서비스로, 사용자가 간단한 일기를<br />
+           전송하면 그 날의 상황과 감정에 맞는 도서, 음악 또는 영화 콘텐츠를 추천해주는 <br />
+           telegram app 입니다. 사용자의 심리 상태를 개선하게 도와주는 역할을 수행합니다.          
+        </p>
+        <br />
+        </div>
+        <div class="class2">
+          <div class="projectImage">
+            <img src="pr41.png" width="130" height="250">
+            <img src="pr42.png" width="130" height="250">
+            <img src="pr43.png" width="130" height="250">
+          </div>
+        </div>
+      </div>     
       </div>
     </div>
   </section>
+
+  <section class="rcommendContainer">
+    <div class="recommend">
+        <h2>함께 개발한 동료들의 평가</h2>
+        <br /><br />
+        <div class="frame">
+          <div class="assessment">
+            <p>안녕</p>
+          </div>
+          <div class="assessment">
+            <p>안녕</p>
+          </div>
+          <div class="assessment">
+            <p>안녕</p>
+          </div>
+        </div>       
+        
+    </div>
+  </section>
+
+
     
   </body>
 </html>
