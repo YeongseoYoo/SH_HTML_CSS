@@ -26,10 +26,12 @@ nav {
   color: #403930;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 150%; /* 30px */
 }
-
+.navItem:hover {
+  font-weight: 700;
+}
 header {
   display: flex;
   padding: 0 20px;
