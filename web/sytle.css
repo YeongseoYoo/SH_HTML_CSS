@@ -29,6 +29,9 @@ nav {
   font-weight: 600;
   line-height: 150%; /* 30px */
 }
+.navItem:hover {
+  font-weight: 700;
+}
 
 header {
   display: flex;
