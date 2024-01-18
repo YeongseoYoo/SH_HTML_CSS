@@ -15,8 +15,8 @@ nav {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
-  padding: 0 20px;
-  gap: 40px;
+  padding: 20px 20px;
+  gap: 50px;
   height: 100px;
   max-width: 1280px;
   margin: 0 auto;
@@ -175,6 +175,7 @@ header {
   font-weight: 700;
   line-height: 125%; /* 50px */
   letter-spacing: -0.8px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 
 .aboutMe p {
@@ -242,6 +243,7 @@ header {
   font-weight: 700;
   line-height: 125%; /* 50px */
   letter-spacing: -0.8px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 .techStack p {
   text-align: center;
@@ -387,6 +389,7 @@ header {
 .projects h1{
   font-size: 48px;
   padding-left: 20px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 .project h3 {
   color: #fff;
@@ -400,6 +403,7 @@ header {
   letter-spacing: -0.8px;
   display: flex;
   margin: 15px 30px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 .project span {
   max-width: 700px;
@@ -461,6 +465,7 @@ header {
   font-weight: 700;
   line-height: 125%; /* 50px */
   letter-spacing: -0.8px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 .frame {
   display: flex;
