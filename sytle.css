@@ -8,6 +8,7 @@
 
 body {
   font-family: Sora;
+  margin: 0;
 }
 
 nav {
@@ -145,7 +146,7 @@ header {
 .profileImage {
   border-radius: 500px;
   margin-right: 80px;
-  border: 10px solid #bcf2f9;
+  border: 10px solid #000000;
   width: 400px;
   height: 400px;
   background-image: url(증명사진1.jpg);
@@ -157,17 +158,17 @@ header {
 .aboutMeContainer {
   background: linear-gradient(
     96deg,
-    rgba(189, 210, 255, 0.4) 1.72%,
-    rgba(116, 224, 215, 0.4) 158.93%
+    #000 1.72%,
+    rgba(2, 0, 0, 0.185) 158.93%
   );
 }
 .aboutMe {
-  /* max-width: 1280px; */
+  /* max-width: 100%; */
   margin: 0 auto;
   padding: 120px 80px;
 }
 .aboutMe h2 {
-  color: #000;
+  color: #ffffff;
   font-size: 40px;
   /* white-space: pre-line; */
   font-style: normal;
@@ -177,7 +178,7 @@ header {
 }
 
 .aboutMe p {
-  color: #333;
+  color: #ffffff;
   max-width: 1100px;
   font-size: 20px;
   font-style: normal;
@@ -192,17 +193,17 @@ header {
   bottom: 50px;
 
   border-radius: 30px;
-  border: 10px solid #bbd5f7;
+  border: 10px solid #000;
   background: linear-gradient(
     98deg,
-    #bed3ff -10.83%,
-    #d2f3e5 51.79%,
-    #ffebd9 110.76%
+    #000 -10.83%,
+    #262b74 51.79%,
+    #afbdff 110.76%
   );
   width: 135px;
   height: 50px;
   padding: 20px 30px;
-  color: rgba(64, 57, 48, 0.8);
+  color: #fff;
 
   text-align: center;
   font-size: 20px;
@@ -212,7 +213,7 @@ header {
 }
 
 .fixedContactButton a {
-  color: black;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .fixedContactButton {
@@ -376,19 +377,19 @@ header {
   padding: 120px 20px;
 }
 .project {
-  background-color: rgb(222, 231, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
   height: 300px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 8px 10px rgba(0, 0, 0, 0.15);
 }
 .projects h1{
   font-size: 48px;
   padding-left: 20px;
 }
 .project h3 {
-  color: #403930;
+  color: #fff;
   max-width: 600px;
   font-family: Pretendard;
   font-size: 24px;
@@ -410,7 +411,7 @@ header {
 .project p {
   max-width: 700px;
   align-self: stretch;
-  color: #403930;
+  color: #e2e0de;
   font-family: Pretendard;
   font-size: 18px;
   font-style: normal;
@@ -491,7 +492,7 @@ header {
 }
 
 .lastContainer {
-  background: linear-gradient(96deg, #cafbc0 1.72%, #ebff94 158.93%);
+  background: #000;
   display: flex;
   height: 406px;
   padding: 64px 50px;
@@ -501,7 +502,7 @@ header {
   gap: 10px;
 }
 .last h2 {
-  color: #403930;
+  color: #fff;
   max-width: 1000px;
   font-family: Pretendard;
   font-size: 48px;
@@ -510,6 +511,7 @@ header {
   line-height: 125%; /* 60px */
   letter-spacing: -0.96px;
   margin: 20px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 3px #858585;
 
   
 }
