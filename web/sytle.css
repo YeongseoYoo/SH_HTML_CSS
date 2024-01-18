@@ -217,14 +217,13 @@ header {
 .fixedContactButton a {
   color: #fff;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .fixedContactButton {
     display: none;
   }
   body {
-    background-color: ;
-  }
-}
+    /* background-color: ; */
+
 
 /* --- Tech Stack---  */
 .techStackContainer {
@@ -426,16 +425,19 @@ header {
   margin: 30px;
 }
 .projectImage1 {
-  padding-right: 20px;
+  padding: 0px 10px;
+  justify-content: center;
+  
 }
 
 .projectImage1 img {
   text-align: right;
   width: 130px;
   height: 250px;
+  
 }
 .projectImage2 {
-  padding-right: 20px;
+  padding: 0px 10px;
 }
 .projectImage2 img {
   text-align: right;
@@ -466,6 +468,7 @@ header {
   font-weight: 700;
   line-height: 125%; /* 50px */
   letter-spacing: -0.8px;
+  text-shadow: 1px 1px 0px #ffffff, 5px 5px 2px #858585;
 }
 .frame {
   display: flex;
