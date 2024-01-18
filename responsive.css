@@ -460,8 +460,39 @@ padding: 5px */
   margin: 20px;
 
 }
-footer{
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 60px 20px;
+
+.footerTextContainer{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.logobuttons {
+  /* display: flex;
+  align-items: flex-end; */
+  /* height: 100px; */
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+
+
+.logos img {
+  max-width: 100%;
+  height: auto;
+  
+}
+.instagram-logo {
+  text-decoration: none;
+}
+
+.instagram-logo img{
+  width: 45px;
+  
+}
+
+.linkedin-logo img{
+  width: 25px;
+  margin-bottom: 5px;
 }
