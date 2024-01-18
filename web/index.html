@@ -24,13 +24,15 @@
   <body>
     <!-- 상단 네비게이션 -->
     <nav>
-      <div class="navItem">home</div>
-      <div class="navItem">project</div>
-      <div class="navItem">recommend</div>
-      <div class="navItem">contact</div>
+      <div class="navItem" onclick="scrollToSection('home')">Home</div>
+      <div class="navItem" onclick="scrollToSection('project')">Project</div>
+      <div class="navItem" onclick="scrollToSection('recommend')">
+        Recommend
+      </div>
+      <div class="navItem" onclick="scrollToSection('contact')">Contact</div>
     </nav>
 
-    <header>
+    <header id="home">
       <!-- 컨텐츠 -->
       <div className="headerTextContainer">
         <div class="badge"> Welcome🎶<span class="typing"></span></div>
@@ -96,6 +98,12 @@
         })
       }
     }
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
   </script>
 
   <section class="techStackContainer">
@@ -122,7 +130,7 @@
       <br /><br /><br />
   </section>
 
-  <section class="projectContainer">
+  <section class="projectContainer" id="project">
     <div class="projects">
         <h1>My Project<br />      
         </h1>
@@ -208,7 +216,7 @@
     </div>
   </section>
 
-  <section class="rcommendContainer">
+  <section class="rcommendContainer" id="recommend">
     <div class="recommend">
         <h2>Assessments</h2>
         <br /><br />
@@ -244,9 +252,10 @@
         </h2>
     </div>
   </section>
-  <footer>
+  <footer id="contact">
     <div className="footerTextContainer">
       <div class ="logobuttons">
+        <p>Copyright ©2024 All rights reserved</p>
         <a href="https://www.instagram.com/122lst/" target="_blank" class="instagram-logo">
           <img src="insta.png" alt="Instagram">
         </a>
