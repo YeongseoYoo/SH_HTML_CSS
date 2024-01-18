@@ -14,6 +14,7 @@ nav {
   align-items: center;
   gap: 60px;
   max-width: 480px;
+  min-width: 300px;
   margin: 15px 15px;
 }
 
@@ -38,6 +39,7 @@ header {
 }
 .headerTextContainer {
   max-width: 480px;
+  min-width: 300px;
 }
 .badge {
   display: flex;
@@ -273,6 +275,7 @@ header {
   line-height: 125%; /* 50px */
   letter-spacing: -0.4px;
   max-width: 480px;
+  min-width: 300px;
 }
 .aboutMe p {
   max-width: 480px;
@@ -285,6 +288,7 @@ header {
 }
 .techStack {
   max-width: 480px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 60px 10px;
 }
@@ -310,7 +314,7 @@ header {
 .product-list {
   text-align: center;
   max-width: 480px;
-
+  min-width: 300px;
 }
 .product-list img {
   margin: 10px; /* 이미지 간격 조절 */
@@ -319,6 +323,7 @@ header {
 .projectContainer {
   background: rgba(244, 244, 244, 0.5);
   max-width: 480px;
+  min-width: 300px;
 }
 .projects {
   padding: 20px 10px;
@@ -351,6 +356,7 @@ header {
   display: flex;
   margin: 0px 30px;
   max-width : 400px;
+  min-width: 300px;
 }
 .project span {
   font-size: 12px;
@@ -398,6 +404,7 @@ padding: 5px */
 }
 .recommend {
   max-width: 480px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 60px 10px;
 }
@@ -456,6 +463,7 @@ padding: 5px */
   color: #403930;
   font-family: Pretendard;
   max-width: 300px;
+  min-width: 250px;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
