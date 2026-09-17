@@ -11,6 +11,18 @@
   padding: 25px 25px 25px 30px;
 }
 
+/* 주식 앱은 마지막 프로젝트와 같은 .projectImage1 크기·간격을 사용한다. */
+.project.project-added.project-stock {
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: start;
+  gap: 0;
+  padding: 0;
+}
+
+.project-stock .project-copy {
+  padding: 25px 30px;
+}
+
 .project-added .project-copy,
 .project-added .project-gallery {
   min-width: 0;
@@ -55,10 +67,6 @@
   gap: 15px;
 }
 
-.project-added .project-gallery-stock {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .project-added .project-gallery-community {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -69,7 +77,8 @@
   border-radius: 8px;
 }
 
-.project-added .project-gallery a:focus-visible {
+.project-added .project-gallery a:focus-visible,
+.project-stock .stock-phone-gallery a:focus-visible {
   outline: 3px solid #8aa8ff;
   outline-offset: 5px;
 }
@@ -82,14 +91,8 @@
   border-radius: 8px;
 }
 
-.project-added .project-gallery-stock img {
-  width: 130px;
-  height: 250px;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: left center;
-  border-radius: 0;
-  box-shadow: none;
+.project-stock .stock-phone-gallery img {
+  object-fit: fill;
 }
 
 @media (max-width: 900px) {
@@ -103,6 +106,18 @@
     width: 100%;
     max-width: 435px;
     justify-self: center;
+  }
+
+  .project.project-added.project-stock {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-stock .project-copy {
+    padding: 24px;
+  }
+
+  .project-stock .class2 {
+    justify-self: end;
   }
 }
 
@@ -127,13 +142,17 @@
     letter-spacing: -0.3px;
   }
 
-  .project-added .project-gallery-stock {
-    gap: 6px;
+  .project.project-added.project-stock {
+    margin: 15px;
+    padding: 0;
   }
 
-  .project-added .project-gallery-stock img {
-    width: 100%;
-    height: auto;
-    max-height: 210px;
+  .project-stock .project-copy {
+    padding: 22px 18px;
+  }
+
+  .project-stock .class2 {
+    min-width: 0;
+    justify-self: stretch;
   }
 }
