@@ -19,6 +19,7 @@
     <title>유영서 portfolio</title>
     <link rel="stylesheet" href="./sytle.css" />
     <link rel="stylesheet" media="(max-width:480px)" href="./responsive.css" />
+    <link rel="stylesheet" href="./projects-added.css" />
   </head>
 
   <body>
@@ -135,6 +136,54 @@
         <h1>My Project<br />      
         </h1>
         <br />
+      <!-- Portfolio.pdf 프로젝트 1 -->
+      <article class="project project-added" aria-labelledby="stock-app-title">
+        <div class="project-copy">
+          <h3 id="stock-app-title">금융 API를 활용한 주식 정보 앱 서비스</h3>
+          <span class="project-tech">React, JavaScript, Python, Flask, KoNLPy, MariaDB</span>
+          <p>
+            한국투자증권·신한투자증권 Open API를 활용해 실시간·일별 시세와 기업 재무정보를 제공하는 주식 정보 앱입니다.
+            Socket으로 실시간 시세를 반영하고, 크롤링한 뉴스에서 추출한 키워드를 워드클라우드로 시각화했습니다.
+            실시간 검색어 순위와 관심 종목 찜 기능을 제공하며, 재무제표 항목의 정의와 유의사항으로 투자 정보의 이해를 돕습니다.
+          </p>
+        </div>
+        <div class="project-gallery project-gallery-stock" aria-label="주식 정보 앱 화면">
+          <a href="./stock-app-home.png" target="_blank" rel="noopener noreferrer" aria-label="주식 정보 앱 메인 화면 크게 보기 (새 탭)">
+            <img src="./stock-app-home.png" alt="인기 검색어와 실시간 인기 종목을 보여주는 앱 메인 화면" width="228" height="407" loading="lazy" decoding="async" />
+          </a>
+          <a href="./stock-app-keywords.png" target="_blank" rel="noopener noreferrer" aria-label="종목별 뉴스 키워드 화면 크게 보기 (새 탭)">
+            <img src="./stock-app-keywords.png" alt="종목 관련 뉴스의 주요 키워드를 시각화한 워드클라우드 화면" width="219" height="404" loading="lazy" decoding="async" />
+          </a>
+          <a href="./stock-app-prices.png" target="_blank" rel="noopener noreferrer" aria-label="주가 차트와 일별 시세 화면 크게 보기 (새 탭)">
+            <img src="./stock-app-prices.png" alt="주가 차트와 일별 시세를 조회하는 두 개의 앱 화면" width="427" height="409" loading="lazy" decoding="async" />
+          </a>
+        </div>
+      </article>
+      <br /><br />
+      <!-- Portfolio.pdf 프로젝트 2 -->
+      <article class="project project-added" aria-labelledby="community-title">
+        <div class="project-copy">
+          <h3 id="community-title">커뮤니티 웹 서비스<br />(게시판, 랭킹, 알고리즘 문제 추천)</h3>
+          <span class="project-tech">React, JavaScript, React Redux, Axios, MongoDB, Docker</span>
+          <p>
+            질문·답변 게시판과 사용자 랭킹, 백준 알고리즘 문제 추천을 제공하는 학습 커뮤니티입니다.
+            에디터로 질문과 답변을 작성하고, 답변 채택 시 점수를 부여하며 작성자에게 수정·삭제 권한을 제공합니다.
+            문제 풀이 확인 및 점수 지급, 공유 캘린더와 사용자 정보 API를 활용한 플레이그라운드 기능을 지원합니다.
+          </p>
+        </div>
+        <div class="project-gallery project-gallery-community" aria-label="학습 커뮤니티 웹 화면">
+          <a class="community-questions" href="./community-questions.png" target="_blank" rel="noopener noreferrer" aria-label="질문·답변 게시판 화면 크게 보기 (새 탭)">
+            <img src="./community-questions.png" alt="지식투자 질문 목록과 답변 채택 기능을 보여주는 게시판 화면" width="476" height="379" loading="lazy" decoding="async" />
+          </a>
+          <a href="./community-home.png" target="_blank" rel="noopener noreferrer" aria-label="캘린더와 알고리즘 문제 추천 화면 크게 보기 (새 탭)">
+            <img src="./community-home.png" alt="공유 캘린더, 사용자 랭킹과 오늘의 알고리즘 문제를 보여주는 메인 화면" width="407" height="236" loading="lazy" decoding="async" />
+          </a>
+          <a href="./community-playground.png" target="_blank" rel="noopener noreferrer" aria-label="플레이그라운드 화면 크게 보기 (새 탭)">
+            <img src="./community-playground.png" alt="사용자 정보 API와 자체 서버를 활용할 수 있는 플레이그라운드 화면" width="385" height="323" loading="lazy" decoding="async" />
+          </a>
+        </div>
+      </article>
+      <br /><br />
       <div class="project">
         
         <div class="class1">

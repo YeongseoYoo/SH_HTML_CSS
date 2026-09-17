@@ -1,0 +1,124 @@
+/* Portfolio.pdf의 프로젝트 1·2에만 적용하는 스타일 */
+.project.project-added {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  height: auto;
+  min-height: 300px;
+  padding: 30px;
+}
+
+.project-added .project-copy,
+.project-added .project-gallery {
+  min-width: 0;
+}
+
+.project-added h3 {
+  display: block;
+  min-width: 0;
+  max-width: none;
+  margin: 0 0 12px;
+  font-size: 24px;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-shadow: none;
+}
+
+.project-added .project-tech {
+  display: block;
+  max-width: none;
+  margin: 0 0 16px;
+  color: #b7c9ff;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+.project-added p {
+  max-width: none;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.project-added .project-gallery {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-added .project-gallery-stock {
+  grid-template-columns: 228fr 219fr 427fr;
+}
+
+.project-added .project-gallery-community {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-added .community-questions {
+  grid-row: span 2;
+}
+
+.project-added .project-gallery a {
+  display: block;
+  min-width: 0;
+  border-radius: 8px;
+}
+
+.project-added .project-gallery a:focus-visible {
+  outline: 3px solid #8aa8ff;
+  outline-offset: 5px;
+}
+
+.project-added .project-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .project.project-added {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .project-added .project-gallery {
+    width: 100%;
+    max-width: 520px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project.project-added {
+    margin: 15px 0;
+    padding: 22px 18px;
+  }
+
+  .project-added h3 {
+    font-size: 19px;
+  }
+
+  .project-added .project-tech {
+    color: #354f89;
+    font-size: 13px;
+  }
+
+  .project-added p {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: -0.3px;
+  }
+
+  .project-added .project-gallery-stock {
+    gap: 6px;
+  }
+}
