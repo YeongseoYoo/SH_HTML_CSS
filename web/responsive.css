@@ -260,7 +260,8 @@ header {
     rgba(189, 210, 255, 0.4) 1.72%,
     rgba(116, 224, 215, 0.4) 158.93%
   );
-  height:300px;
+  height: auto;
+  min-height: 300px;
 }
 .aboutMe {
   padding: 55px 20px;
